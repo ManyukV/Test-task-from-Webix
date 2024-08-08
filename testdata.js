@@ -5,7 +5,4 @@ var small_film_set = [
 	{ id:4, title:"The Good, the Bad and the Ugly", year:1966, votes:213030, rating:8.9, rank:4, category:"Western"},
 	{ id:5, title:"Pulp fiction", year:1994, votes:533848, rating:8.9, rank:5, category:"Crime"},
 	{ id:6, title:"12 Angry Men", year:1957, votes:164558, rating:8.9, rank:6, category:"Western"},
-	{ id:7, title:"12 Angry Men", year:1957, votes:164558, rating:8.9, rank:6, category:"Western"},
-	{ id:8, title:"12 Angry Men", year:1957, votes:164558, rating:8.9, rank:6, category:"Western"},
-	{ id:9, title:"12 Angry Men", year:1957, votes:164558, rating:8.9, rank:6, category:"Western"}
 ];

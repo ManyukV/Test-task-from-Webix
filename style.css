@@ -9,8 +9,24 @@
 
 .my-header {
   background-color: #607d8b;
-  color: #fff;
+  border:none;
 }
+
+.my-header div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-label {
+  color: #fff;
+  margin-left: 12px;
+}
+
+.transparent-button {
+  margin-right: 12px;
+}
+
 .transparent-button .webix_button {
   background: transparent;
   border: none;
@@ -21,16 +37,24 @@
   color: #fff;
 }
 
-
 .sidebar {
   background-color: #eceff1;
-  width: 200px; /* Фиксированная ширина боковой панели */
 
 }
+
+.connected-status div{
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: green;
+  background-color:#eceff1;
+}
+
 .footer {
   background-color: #f1f1f1;
   border-top: 1px solid #dee2e6;
   text-align: center;
   padding: 10px;
-  
+  border:none;
 }
