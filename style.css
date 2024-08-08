@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#app {
+  height: 100vh;
+}
+
+.my-header {
+  background-color: #607d8b;
+  color: #fff;
+}
+.transparent-button .webix_button {
+  background: transparent;
+  border: none;
+  color: #fff;
+}
+
+.webix_secondary .webix_button .webix_icon_btn {
+  color: #fff;
+}
+
+
+.sidebar {
+  background-color: #eceff1;
+  width: 200px; /* Фиксированная ширина боковой панели */
+
+}
+.footer {
+  background-color: #f1f1f1;
+  border-top: 1px solid #dee2e6;
+  text-align: center;
+  padding: 10px;
+  
+}
