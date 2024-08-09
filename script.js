@@ -23,6 +23,7 @@ webix.ready(function () {
       //second row
       {
         cols: [
+          //first col
           {
             rows: [
               {
@@ -46,6 +47,7 @@ webix.ready(function () {
               },
             ],
           },
+          //second col
           {
             rows: [
               {
@@ -63,6 +65,7 @@ webix.ready(function () {
               },
             ],
           },
+          //third col
           {
             view: "form",
             width: 300,
