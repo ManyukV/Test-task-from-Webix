@@ -2,6 +2,7 @@ webix.ready(function () {
   webix.ui({
     container: "app",
     rows: [
+      //first row
       {
         view: "toolbar",
         css: "my-header",
@@ -19,6 +20,7 @@ webix.ready(function () {
           },
         ],
       },
+      //second row
       {
         cols: [
           {
@@ -31,17 +33,18 @@ webix.ready(function () {
                   { id: "dashboard", value: "Dashboard" },
                   { id: "users", value: "Users" },
                   { id: "products", value: "Products" },
-                  { id: "locations", value: "Locations" }
+                  { id: "locations", value: "Locations" },
                 ],
               },
               {
-                css:"connected-status",
+                css: "connected-status",
                 width: 201,
-                template: "<div><span class='webix_icon wxi-check'></span>Connected</div>",
+                template:
+                  "<div><span class='webix_icon wxi-check'></span>Connected</div>",
                 autoheight: true,
-                borderless: true
-              }
-            ]
+                borderless: true,
+              },
+            ],
           },
           {
             rows: [
@@ -82,6 +85,7 @@ webix.ready(function () {
           },
         ],
       },
+      //third row
       {
         view: "template",
         template:
