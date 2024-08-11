@@ -1,22 +1,21 @@
 webix.ready(function () {
   webix.ui({
-    container: "app",
     rows: [
       //first row
       {
         view: "toolbar",
-        css: "my-header",
+        css: "webix_dark",
         height: 50,
-        elements: [
-          { view: "label", label: "<span class='header-label'>My App</span>" },
+        paddingX: 12,
+        cols: [
+          { view: "label", label: "My App" },
           {
             view: "button",
             type: "icon",
             icon: "wxi-user",
             label: "Profile",
-            width: 100,
-            css: "transparent-button",
-            align: "right",
+            autowidth: true,
+            css: "webix_transparent"
           },
         ],
       },
@@ -29,7 +28,13 @@ webix.ready(function () {
               {
                 view: "sidebar",
                 css: "sidebar",
-                width: 201,
+                paddingX: 15,
+                width: 250,
+                borderless: true,
+                resizer:true,
+                css: "sidebar",
+                autowidth:true,
+                autoheight: true, 
                 data: [
                   { id: "dashboard", value: "Dashboard" },
                   { id: "users", value: "Users" },
@@ -38,14 +43,19 @@ webix.ready(function () {
                 ],
               },
               {
-                css: "connected-status",
-                width: 201,
+                view: "template",
                 template:
-                  "<div><span class='webix_icon wxi-check'></span>Connected</div>",
-                autoheight: true,
+                  "<div style='color: green; text-align: center;'><span class='webix_icon wxi-check'></span> Connected</div>",
+                height: 30,
                 borderless: true,
+                css: "sidebar",
               },
+              { view: "template", template: "", role: "placeholder", height: 0.01 }
             ],
+            
+          },
+          {
+            view: "resizer", // Добавляем ресайзер для изменения ширины боковой панели
           },
           //second col
           {
@@ -54,6 +64,7 @@ webix.ready(function () {
                 view: "datatable",
                 height: 880,
                 autoConfig: true,
+                scrollX: false,
                 columns: [
                   { id: "title", header: "Title", fillspace: true },
                   { id: "year", header: "Year" },
@@ -68,10 +79,9 @@ webix.ready(function () {
           //third col
           {
             view: "form",
-            width: 300,
-            minWidth: 200,
-            maxWidth: 350,
-            elements: [
+            width: 320,
+            autowidth: true,
+            rows: [
               { view: "template", template: "EDIT FILMS", type: "section" },
               { view: "text", label: "Title", name: "title" },
               { view: "text", label: "Year", name: "year" },
@@ -92,9 +102,8 @@ webix.ready(function () {
       {
         view: "template",
         template:
-          "The software is provided by <a href='https://webix.com'>https://webix.com</a>. All rights reserved (c).",
+          "<div style='text-align:center;'>The software is provided by <a href='https://webix.com'>https://webix.com</a>. All rights reserved (c).</div>",
         height: 40,
-        css: "footer",
       },
     ],
   });
