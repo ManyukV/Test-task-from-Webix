@@ -1,9 +1,13 @@
 .webix_el_box .transparent-btn .webix_el_box .webix_button{
-    background-color: transparent;
-  }
+  background-color: transparent;
+}
 
 .sidebar {
   background-color: #f1f1f1;
+}
+
+.sidebar.template {
+  border-top-color: transparent;
 }
 
 .connected {

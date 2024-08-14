@@ -33,8 +33,6 @@ webix.ready(function () {
                 borderless: true,
                 resizer:true,
                 css: "sidebar",
-                autowidth:true,
-                autoheight: true, 
                 data: [
                   { id: "dashboard", value: "Dashboard" },
                   { id: "users", value: "Users" },
@@ -47,10 +45,9 @@ webix.ready(function () {
                 template:
                   "<div style='color: green; text-align: center;'><span class='webix_icon wxi-check'></span> Connected</div>",
                 height: 30,
-                borderless: true,
-                css: "sidebar",
+                borderless: false,
+                css: "sidebar template",
               },
-              { view: "template", template: "", role: "placeholder", height: 0.01 }
             ],
             
           },
@@ -62,7 +59,6 @@ webix.ready(function () {
             rows: [
               {
                 view: "datatable",
-                height: 880,
                 autoConfig: true,
                 scrollX: false,
                 columns: [
@@ -80,7 +76,6 @@ webix.ready(function () {
           {
             view: "form",
             width: 320,
-            autowidth: true,
             rows: [
               { view: "template", template: "EDIT FILMS", type: "section" },
               { view: "text", label: "Title", name: "title" },
@@ -94,6 +89,7 @@ webix.ready(function () {
                   { view: "button", value: "Clear" },
                 ],
               },
+              {}
             ],
           },
         ],
@@ -103,7 +99,7 @@ webix.ready(function () {
         view: "template",
         template:
           "<div style='text-align:center;'>The software is provided by <a href='https://webix.com'>https://webix.com</a>. All rights reserved (c).</div>",
-        height: 40,
+        height: 26,
       },
     ],
   });
